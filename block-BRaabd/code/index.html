@@ -32,7 +32,31 @@
 
         render() {
           return;
-          <> ..</>;
+          <>
+            <div className="button-container">
+              {labels.map((label) => {
+                return (
+                  <button
+                    className={this.state.active === label ? "active" : ""}
+                    onClick={() => {
+                      this.setState({
+                        active: label,
+                      });
+                    }}
+                  >
+                    {label}
+                  </button>
+                );
+              })}
+            </div>
+            <div className="img-container">
+              <img
+                className="full-width"
+                src={`../assets/${this.state.active}.jpg`}
+                alt=""
+              />
+            </div>
+          </>;
         }
       }
 
