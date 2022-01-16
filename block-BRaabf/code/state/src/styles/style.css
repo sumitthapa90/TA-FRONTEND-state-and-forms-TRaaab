@@ -1,0 +1,28 @@
+body {
+  background-color: olive;
+}
+
+.btn {
+  border: 1px solid;
+  padding: 0.5rem;
+  color: red;
+}
+.sec {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.active {
+  background-color: rgb(1, 183, 255);
+}
+.steps {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1rem;
+  background-color: rgb(10, 10, 92);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.6rem;
+}
