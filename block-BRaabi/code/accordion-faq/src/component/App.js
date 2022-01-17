@@ -21,12 +21,14 @@ class App extends React.Component {
                     <h2
                       onClick={() =>
                         this.setState({
-                          activeQuestion: i,
+                          activeQuestion:
+                            this.state.activeQuestion === i ? "null" : i,
                         })
                       }
                     >
-                      {faq.Q} {this.state.activeQuestion === i ? "Down" : "Up"}
-                      {this.state.activeQuestion === i && <p>{faq.A}</p>}
+                      Ques: {faq.Q}{" "}
+                      {this.state.activeQuestion === i ? "Down" : "Up"}
+                      {i === this.state.activeQuestion && <p>Ans:{faq.A}</p>}
                     </h2>
                   </li>
                 );
