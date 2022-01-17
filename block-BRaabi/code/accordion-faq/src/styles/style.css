@@ -1,0 +1,30 @@
+body {
+  background-color: olive;
+}
+
+.container {
+  border: 2px dashed red;
+  padding: 1rem;
+}
+.box {
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.green {
+  border: 1px solid green;
+  padding: 0.5rem;
+}
+
+.red {
+  border: 1px solid red;
+  padding: 0.5rem;
+}
+
+.visible {
+  border: 1px solid white;
+}
+
+.hidden {
+  border: 1px solid gray;
+}
