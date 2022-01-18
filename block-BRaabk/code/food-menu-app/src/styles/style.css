@@ -1,0 +1,13 @@
+li {
+  padding: 0.5rem;
+  border: 1px solid;
+  width: 100px;
+}
+
+.active {
+  background-color: skyblue;
+}
+
+.arti-sec{
+  width: 300px;
+}
