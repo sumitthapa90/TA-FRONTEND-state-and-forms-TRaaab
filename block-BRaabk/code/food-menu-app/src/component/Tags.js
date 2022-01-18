@@ -9,7 +9,6 @@ class Tags extends React.Component {
       activeTag: "all",
     };
   }
-
   render() {
     let allCategories = data.map((food) => food.category);
 
@@ -28,31 +27,35 @@ class Tags extends React.Component {
       );
     }
 
+    console.log(allProducts);
+
     return (
       <div>
-        <header>
-          {categories.map((category, i) => {
-            return (
-              <>
-                <button className={this.state.activeTag === category ? "active": ""}
+        {categories.map((category, i) => {
+          return (
+            <>
+              <div>
+                <button
+                  key={category.id}
+                  className={this.state.activeTag === category ? "active" : ""}
                   onClick={() => {
                     this.setState({
                       activeTag: category,
                     });
                   }}
                 >
-                  {category.toLocaleUpperCase()}
+                  {category.toUpperCase()}
                 </button>
-              </>
-            );
-          })}
-        </header>
+              </div>
 
-        <main>
-          <section>
-            <Menu allProducts={allProducts} />
-          </section>
-        </main>
+              <main className="p-12">
+                <section className="flex justify-between flex-wrap">
+                  <Menu allProducts={allProducts} />
+                </section>
+              </main>
+            </>
+          );
+        })}
       </div>
     );
   }

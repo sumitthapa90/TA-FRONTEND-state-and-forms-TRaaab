@@ -1,18 +1,13 @@
-body {
-  background-color: darkgrey;
+li {
+  padding: 0.5rem;
+  border: 1px solid;
+  width: 100px;
 }
 
-header {
-  text-align: center;
-}
-hr {
-  width: 50px;
-}
-.articles{
-  width: 500px;
+.active {
+  background-color: skyblue;
 }
 
-
-.active{
-  background-color: cornflowerblue;
+.arti-sec{
+  width: 300px;
 }
