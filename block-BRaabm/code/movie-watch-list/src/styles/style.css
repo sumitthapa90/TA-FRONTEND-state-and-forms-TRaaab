@@ -1,0 +1,51 @@
+header {
+  background-color: darkolivegreen;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+h1{
+  color: white;
+}
+.card-sec {
+  width: 500px;
+  position: absolute;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.close-modal {
+  border-radius: 10px;
+  left: 40rem;
+  position: relative;
+  width: 50%;
+  border: 1px solid green;
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  width: 300px;
+  border: 2px solid;
+  margin-top: 1rem;
+}
+.close-btn {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: skyblue;
+}
