@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Slider</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      let fonts = [
+        "Roboto",
+        "Poppins",
+        "Open Sans",
+        "Georama",
+        "Noto Sans JP",
+        "Oswald",
+        "Style Script",
+        "Palette Mosaic",
+        "Merriweather",
+        "Crimson Pro",
+      ];
+
+      class App extends React.Component {
+        constructor(props) {
+          super();
+          this.state = {
+            inputText: "",
+            fontSize: "16",
+          };
+        }
+
+        handleText = (event) => {
+          this.setState({
+            inputText: event.target.value,
+          });
+        };
+
+        handleFontSize = (event) => {
+          this.setState({
+            fontSize: event.target.value,
+          });
+        };
+
+        render() {
+          let size = this.state.fontSize + "px";
+          return (
+            <>
+              <h1>Font Slidebar</h1>
+              <div className="input-div">
+                <input
+                  onChange={this.handleText}
+                  className="input"
+                  type="text"
+                  placeholder="Enter a style"
+                  value={event.target.inputText}
+                />
+
+                <input
+                  value={event.target.fontSize}
+                  onChange={this.handleFontSize}
+                  className="slidebar"
+                  type="range"
+                  min="16"
+                  max="100"
+                />
+              </div>
+              <section className="sec-2">
+                {fonts.map((font) => {
+                  <div className="box" key={font}>
+                    <h2>{font}</h2>
+                    <div>
+                      <h2 style={{ fontFamily: font, fontSize: size }}>
+                        {this.state.inputText}
+                      </h2>
+                    </div>
+                  </div>;
+                })}
+              </section>
+            </>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
