@@ -132,14 +132,17 @@ table {
 
 /* CSS */
 
-
-body{
+body {
   background-color: cornflowerblue;
 }
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-.input-div{
- text-align: center;
- 
+.input-div {
+  text-align: center;
 }
 h1 {
   font-size: 2rem;
@@ -172,8 +175,6 @@ h2 {
 }
 
 .sec-2 {
-  
   margin: 0 auto;
   width: 70%;
- 
 }
