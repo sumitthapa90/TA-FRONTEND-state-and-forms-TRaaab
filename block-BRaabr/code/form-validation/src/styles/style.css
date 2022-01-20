@@ -1,0 +1,45 @@
+body {
+  background-color: grey;
+}
+
+.form-body {
+  padding: 1rem;
+}
+
+form {
+  width: 200px;
+}
+label {
+  font-size: 1.3rem;
+}
+
+h1 {
+  padding: 1rem;
+}
+input {
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+span {
+  color: red;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
