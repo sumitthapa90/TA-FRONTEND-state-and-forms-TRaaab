@@ -132,15 +132,26 @@ table {
 
 /* CSS */
 
+
+body{
+  background-color: cornflowerblue;
+}
+
+.input-div{
+ text-align: center;
+ 
+}
 h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 input {
   border-radius: 10px;
   width: 400px;
   padding: 0.5rem;
   font-size: 1.3rem;
+  border: 2px solid brown;
 }
 
 .box {
@@ -149,10 +160,20 @@ input {
   width: 300px;
   border: 2px solid;
   border-radius: 10px;
+  background-color: darkcyan;
 }
 h2 {
-    text-align: center;
+  text-align: center;
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.sec-2 {
+  
+  margin: 0 auto;
+  width: 70%;
+ 
 }

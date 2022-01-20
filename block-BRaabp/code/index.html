@@ -55,6 +55,7 @@
 
         render() {
           let size = this.state.fontSize + "px";
+
           return (
             <>
               <h1>Font Slidebar</h1>
@@ -77,16 +78,16 @@
                 />
               </div>
               <section className="sec-2">
-                {fonts.map((font) => {
+                {fonts.map((font) => (
                   <div className="box" key={font}>
                     <h2>{font}</h2>
-                    <div>
+                    <div className="style">
                       <h2 style={{ fontFamily: font, fontSize: size }}>
                         {this.state.inputText}
                       </h2>
                     </div>
-                  </div>;
-                })}
+                  </div>
+                ))}
               </section>
             </>
           );
