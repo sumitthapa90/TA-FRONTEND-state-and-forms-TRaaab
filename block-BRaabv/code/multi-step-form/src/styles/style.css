@@ -1,0 +1,29 @@
+body {
+  background-color: aquamarine;
+}
+.field {
+  width: 100px;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 1rem;
+}
+textarea {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 1rem;
+}
+.field3{
+    width: 300px;
+}
+.field2{
+    width: 300px;
+}
+button{
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px ;
+}
